@@ -30,7 +30,7 @@ const NavbarComponent = () => {
           <Navbar.Brand href="#home" className="fs-3 fw-bold">AaStore</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto text-center">
+            <Nav className="mx-auto">
               {navLinks.map((link) =>
               (
                 <div className="nav-link" key={link.id} >
@@ -43,11 +43,11 @@ const NavbarComponent = () => {
               )}
             </Nav>
 
-            <div className="text-center">
+            {/* <div className="text-center">
               <button className="btn btn-outline-succsess rounded-1">
                 Join With Us
               </button>
-            </div>
+            </div> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

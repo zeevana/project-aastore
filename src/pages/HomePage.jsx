@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import HeroImage from '../assets/img/hero.png'
+import HeroImage from '../assets/img/hero.png';
 import { kelasTerbaru } from '../data/index';
 
 import { useNavigate } from "react-router-dom";
@@ -40,22 +40,21 @@ const HomePage = () => {
             {kelasTerbaru.map((kelas) => {
               return (
                 <Col key={kelas.id}>
-                  <img src={kelas.image} alt="unsplash.com" className="w-100 mb-3 rounded-top" />
-                  <h5 className="mb-5 px-3">{kelas.title}</h5>
-                  <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
-                    {/* <p className="m-0 text-primary fw bold">{kelas.price}</p> */}
-                    {/* <button className="btn btn-danger rounded-1" onClick={() => navigate("pages/kelaspage")}>{kelas.buy}</button> */}
-
-                  </div>
+                  <button className="image-button" onClick={() => navigate("kelas")}>
+                    <img src={kelas.image} alt={kelas.title} className="w-100 mb-3 rounded-top" />
+                    <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
+                    {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
+                      <button className="btn btn-success rounded-3" onClick={() => navigate("kelas")}>{kelas.buy}</button>
+                    </div> */}
+                  </button>
                 </Col>
               )
             })}
-
           </Row>
 
           <Row>
             <Col className="text-center">
-              <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("/kelas")}>Lihat Semua Game<i className="fa-solid"></i></button>
+              <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("kelas")}>Lihat Semua Game<i className="fa-solid fa-chevron-right ms-3"></i></button>
 
 
             </Col>

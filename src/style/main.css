@@ -192,17 +192,19 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 
 /* STYLE LIST HARGA */
 
-.kelaz {
-    width: 100%;
-    padding-top: 100px;
-}
 
-.kelaz .row:nth-child(1){
-    padding-top: 50px;
-   
-}
-
-
+.kelas .image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    /* Atur properti lain sesuai kebutuhan */
+  }
+  
+.kelas  .image-button:hover {
+    /* Tambahkan efek hover di sini */
+    opacity: 0.8;
+  }
 
 /* STYLE FOOTEr */
 .footer{
