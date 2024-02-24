@@ -5,7 +5,7 @@ import FaqPage from './pages/FaqPage';
 import NavbarComponent from './components/NavbarComponent';
 import KelasPage from './pages/KelasPage';
 import FooterComponent from './components/FooterComponent';
-import "./dist/css/main.css";
+
 
 
 function App() {
