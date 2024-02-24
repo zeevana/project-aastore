@@ -44,7 +44,7 @@ const HomePage = () => {
                   <h5 className="mb-5 px-3">{kelas.title}</h5>
                   <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
                     {/* <p className="m-0 text-primary fw bold">{kelas.price}</p> */}
-                    <button className="btn btn-danger rounded-1" onClick={() => navigate("pages/kelaspage")}>{kelas.buy}</button>
+                    {/* <button className="btn btn-danger rounded-1" onClick={() => navigate("pages/kelaspage")}>{kelas.buy}</button> */}
 
                   </div>
                 </Col>
