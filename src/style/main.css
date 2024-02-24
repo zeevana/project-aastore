@@ -48,12 +48,13 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 
 .homepage .header-box h1 {
     font-size: 3.2rem;
-    font-weight: 600;
+    font-weight: 300;
     color: var(--color-text);
 }
   
 .homepage .header-box h1 span {
     font-weight: 700;
+    font-style: bold;
 
 }
 
@@ -76,6 +77,13 @@ header  { background: #c6ffdd; /* fallback for old browsers */
         display: block;
         margin-inline: auto;
     }
+}
+
+@media screen and (max-width: 775px) {
+    .homepage .header-box{
+        padding-top: 8rem;
+    }
+    
 }
 
 @media screen and (max-width: 575px) {
@@ -182,6 +190,20 @@ header  { background: #c6ffdd; /* fallback for old browsers */
     background-color: #ffffff;
 }
 
+/* STYLE LIST HARGA */
+
+.kelaz {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.kelaz .row:nth-child(1){
+    padding-top: 50px;
+   
+}
+
+
+
 /* STYLE FOOTEr */
 .footer{
     width: 100%;
@@ -216,3 +238,21 @@ header  { background: #c6ffdd; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #3780c4, #86c2fb, #5dff9e); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #5b82d6, #6b6bc2, #d0d3ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+
+.footer .row.row:nth-child(1) .col:nth-child(2){
+    gap: 10px;
+}
+
+.footer .row.row:nth-child(1) .col:nth-child(2) a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .row.row:nth-child(1) .col:nth-child(2) a:hover {
+    color: #f6f8fd;
+}
+   
+.footer .row.row:nth-child(2) {
+    margin-top: 100px;
+}

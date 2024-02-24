@@ -1,18 +1,20 @@
 import { Row, Col, Container, Card } from "react-bootstrap"
-import { priceList, ff } from '../data/index';
+import { priceList, ff, ml } from '../data/index';
+
 
 const KelasPage = () => {
   return (
 
-    <div className="mb-4 pt-5">
+    <div className="kelaz">
       <Container>
-        <Row className="justify-content-center g-4">
-          <h2>Genshin Impact</h2>
+
+        <h2 className="fw-bold ">Genshin Impact</h2>
+        <Row className="justify-content-center g-4 mb-5 ">
           {priceList.map((item) => (
             <Col key={item.id} xs={12} md={6} lg={4}> {/* Menentukan jumlah kolom untuk tampilan responsif */}
               <Card>
                 <Card.Body>
-                  <Card.Title>{item.item}</Card.Title>
+                  <Card.Title className="fw-bold">{item.item}</Card.Title>
                   <Card.Text>
                     Harga: {item.price}
                   </Card.Text>
@@ -21,13 +23,14 @@ const KelasPage = () => {
             </Col>
           ))}
         </Row>
-        <Row className="justify-content-center g-4 pt-5">
-          <h2>Free Fire</h2>
+
+        <h2 className="fw-bold pt-5">Free Fire</h2>
+        <Row className="justify-content-center g-4 mb-5">
           {ff.map((item) => (
             <Col key={item.id} xs={12} md={6} lg={4}> {/* Menentukan jumlah kolom untuk tampilan responsif */}
               <Card>
                 <Card.Body>
-                  <Card.Title>{item.item}</Card.Title>
+                  <Card.Title className="fw-bold">{item.item}</Card.Title>
                   <Card.Text>
                     Harga: {item.price}
                   </Card.Text>
@@ -36,6 +39,23 @@ const KelasPage = () => {
             </Col>
           ))}
         </Row>
+
+        <h2 className="fw-bold pt-5">Mobile Legends</h2>
+        <Row className="justify-content-center g-4 mb-5">
+          {ml.map((item) => (
+            <Col key={item.id} xs={12} md={6} lg={4}> {/* Menentukan jumlah kolom untuk tampilan responsif */}
+              <Card>
+                <Card.Body>
+                  <Card.Title className="fw-bold">{item.item}</Card.Title>
+                  <Card.Text>
+                    Harga: {item.price}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+
       </Container>
     </div>
 

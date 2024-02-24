@@ -23,8 +23,21 @@ const FooterComponent = () => {
 
             </div>
           </Col>
+          <Col className="d-flex flex-column col-lg-2 col">
+            <h5 className="fw-bold">Menu</h5>
+            <Link to="">Home</Link>
+            <Link to="">List Game</Link>
+            <Link to="">Testimoni</Link>
+            <Link to="">FAQ</Link>
+            <Link to="">Syarat & Ketentuan</Link>
+          </Col>
           <Col></Col>
-          <Col></Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <p className="text-center px-md-0 px-3">&copy; Copyright {new Date().getFullYear()} by <span className="fw-bold">Xxvana</span> , All Right Reserved</p>
+          </Col>
         </Row>
       </Container>
     </div>

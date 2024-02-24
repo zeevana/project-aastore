@@ -32,7 +32,7 @@ const HomePage = () => {
           <Row>
             <Col>
               <h1 className="text-center fw-bold">List Terbaru</h1>
-              <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className="text-center">Daftar Harga Top Up Termurah AaStore</p>
             </Col>
           </Row>
 

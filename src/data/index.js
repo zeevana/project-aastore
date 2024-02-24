@@ -366,26 +366,26 @@ export const faq = [
   {
     id: 1,
     eventKey: 0,
-    title: "Apakah ini Berlangganan?",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
+    title: "Bagaimana cara Top Up?",
+    desc: "Hubungi no wa admin di pojok kiri bawah",
   },
   {
     id: 2,
     eventKey: 1,
-    title: "Bagaimana Sistem Belajarnya?",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
+    title: "Bagaimana Sistem Pembayarannya?",
+    desc: "Mudah, chat admin lalu lakukan pembayaran melalui transfer Bank, E-Wallet",
   },
   {
     id: 3,
     eventKey: 2,
-    title: "Apakah Boleh di Share ke Orang Lain?",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
+    title: "Apakah Boleh Hutang dulu?",
+    desc: "SKIPPPPPPP",
   },
   {
     id: 4,
     eventKey: 3,
-    title: "Apakah Ada Grup Diskusi?",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
+    title: "Apakah Top Up Disini Aman?",
+    desc: "Tentu saja, aman dan legal",
   },
 ];
 
@@ -409,5 +409,14 @@ export const ff = [
   { id: 9, item: "dm 720", price: "Rp 100.000" },
  
 
+];
+
+export const ml = [
+  { id: 1, item: "dm 85", price: "Rp 23.000" },
+  { id: 2, item: "dm 110", price: "Rp 32.000" },
+  { id: 3, item: "dm 277", price: "Rp 76.000" },
+  { id: 4, item: "dm 568", price: "Rp 155.000" },
+  { id: 5, item: "dm 642", price: "Rp 175.000" },
+  { id: 6, item: "dm 716", price: "Rp 195.000" },
 ];
 
