@@ -6,7 +6,14 @@ import { useNavigate } from "react-router-dom";
 import FaqComponent from "../components/FaqComponent";
 
 const HomePage = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+
+  const handleButtonClick = (kelasId) => {
+    // Redirect ke halaman baru berdasarkan ID kelas
+    navigate(`/kelas/${kelasId}`);
+  };
+  // let navigate = useNavigate();
+
 
   return (
     <div className="homepage">
@@ -37,19 +44,18 @@ const HomePage = () => {
           </Row>
 
           <Row>
-            {kelasTerbaru.map((kelas) => {
-              return (
-                <Col key={kelas.id}>
-                  <button className="image-button" onClick={() => navigate("kelas")}>
-                    <img src={kelas.image} alt={kelas.title} className="w-100 mb-3 rounded-top" />
-                    <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
-                    {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
+            {kelasTerbaru.map((kelas) => (
+              <Col key={kelas.id}>
+                <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>
+                  <img src={kelas.image} alt={kelas.title} className="w-100 mb-3 rounded-top" />
+                  <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
+                  {/* Jika Anda ingin menambahkan tombol beli, Anda dapat melakukannya di sini */}
+                  {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
                       <button className="btn btn-success rounded-3" onClick={() => navigate("kelas")}>{kelas.buy}</button>
-                    </div> */}
-                  </button>
-                </Col>
-              )
-            })}
+                </div> */}
+                </button>
+              </Col>
+            ))}
           </Row>
 
           <Row>
