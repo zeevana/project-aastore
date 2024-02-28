@@ -55,7 +55,7 @@ export const semuaKelas = [
       { type: "moon x2", price: 200000 },
       { type: "moon x3", price: 300000 }
     ],
-    buy: "Beli Kelas",
+    category:'game_populer',
     delay: "1300",
   },
   {
@@ -78,7 +78,7 @@ export const semuaKelas = [
       { type: "500 dm", price: "Rp 72.000,-" },
       { type: "720 dm", price: "Rp 100.000,-" },
     ],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "1600",
   },
   {
@@ -93,7 +93,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "1900",
   },
   {
@@ -108,7 +108,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "",
   },
   {
@@ -123,7 +123,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "300",
   },
   {
@@ -138,7 +138,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "600",
   },
   {
@@ -153,7 +153,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "",
   },
   {
@@ -168,7 +168,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_populer",
     delay: "300",
   },
   {
@@ -183,7 +183,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    buy: "Beli Kelas",
+    category:"game_android",
     delay: "600",
   },
 ];
@@ -267,6 +267,7 @@ export const kelasTerbaru = [
     buy: "Check",
     delay: "400",
   },
+  
 ];
 
 export const testimonial = [
@@ -388,6 +389,7 @@ export const dataSwiper = [
     name: "People 6",
     skill: "Web Developer",
   },
+  
 ];
 
 export const faq = [

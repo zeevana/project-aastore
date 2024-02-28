@@ -42,15 +42,49 @@
 
 /*STYLE HOMEPAGE HEADER*/
 header  { background: #c6ffdd; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3780c4, #86c2fb, #5dff9e); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #5b82d6, #6b6bc2, #d0d3ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-.homepage .header-box h1 {
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.ragnarok {
+    animation: fadeIn 0.9s ease-in-out; 
+}
+.ragnarok2 {
+    animation: slideIn 0.9s ease-in-out; 
+}
+
+
+
+  /* CSS untuk judul */
+  .homepage .header-box h1 {
     font-size: 3.2rem;
     font-weight: 300;
     color: var(--color-text);
-}
+    animation: slideIn 0.7s ease-in forwards; /* Menggunakan animasi slideIn dengan durasi 0.5 detik */
+  } 
   
 .homepage .header-box h1 span {
     font-weight: 700;
@@ -60,8 +94,9 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 
 .homepage.header-box p {
     line-height: 2;
-    color: var(--color-text);
-    font-weight: 500;
+  color: var(--color-text);
+  font-weight: 500;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .homepage.header-box img {
@@ -162,6 +197,8 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 }
 
 
+
+
 /* FAQ */
 
 .faq{
@@ -237,8 +274,8 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 }
 
 .footer {background: #c6ffdd; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3780c4, #86c2fb, #5dff9e); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #5b82d6, #6b6bc2, #d0d3ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
 .footer .row.row:nth-child(1) .col:nth-child(2){
@@ -325,7 +362,7 @@ header  { background: #c6ffdd; /* fallback for old browsers */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Melengkungkan ujung gambar */
+    border-radius: 20px; /* Melengkungkan ujung gambar */
     overflow: hidden; /* Mengatur overflow agar gambar terpotong jika lebih besar dari area kontainer */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Menambahkan bayangan untuk efek stylish */
 }
@@ -344,3 +381,30 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 .box-kl {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+.button-containers {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Jarak antara tombol */
+  }
+  
+  .btn1 {
+    /* Gaya dasar tombol */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Animasi ketika tombol ditekan */
+  }
+  
+  .btn1:hover {
+    transform: translateY(-3px); /* Menggeser tombol sedikit ke atas saat digulir */
+  }
+  
+  .btn1:active {
+    transform: translateY(1px); /* Menggeser tombol sedikit ke bawah saat ditekan */
+  }

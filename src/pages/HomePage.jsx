@@ -24,7 +24,7 @@ const HomePage = () => {
               <h1 className="mb-4">
                 Top Up <br /> <span>Game Murah</span> <br />Cuma disini!!!
               </h1>
-              <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam alias nihil voluptatibus? Obcaecati alias aperiam, quam nulla dolore quo recusandae, ipsum voluptatibus rerum beatae ea velit natus corporis inventore ad.</p>
+              <p className=" mb-4">Selamat datang di AaStore, destinasi utama untuk top up game dengan harga terbaik! Temukan beragam game favoritmu dan nikmati kemudahan top up tanpa ribet. Dapatkan pengalaman bermain game yang lebih seru dan lancar dengan layanan top up terpercaya dari AaStore!</p>
               <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2">Lihat List</button>
               <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">Lihat Promo</button>
             </Col>
@@ -38,8 +38,8 @@ const HomePage = () => {
         <Container>
           <Row>
             <Col>
-              <h1 className="text-center fw-bold">List Terbaru</h1>
-              <p className="text-center">Daftar Harga Top Up Termurah AaStore</p>
+              <h1 className="ragnarok text-center fw-bold">List Terbaru</h1>
+              <p className="ragnarok2 text-center">Daftar Harga Top Up Termurah AaStore</p>
             </Col>
           </Row>
 
