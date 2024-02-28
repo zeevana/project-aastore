@@ -408,3 +408,10 @@ header  { background: #c6ffdd; /* fallback for old browsers */
   .btn1:active {
     transform: translateY(1px); /* Menggeser tombol sedikit ke bawah saat ditekan */
   }
+
+  @media screen and (max-width: 768px) {
+    .btn1 {
+      padding: 8px 16px; /* Mengurangi padding pada tombol saat layar ponsel */
+      font-size: 14px; /* Mengurangi ukuran font pada tombol saat layar ponsel */
+    }
+  }
