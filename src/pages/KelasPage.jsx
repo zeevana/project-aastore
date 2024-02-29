@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import HeroImage from '../assets/img/hero.png';
+// import HeroImage from '../assets/img/hero.png';
 import { semuaKelas } from '../data/index';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
@@ -12,6 +12,7 @@ const KelasPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const handleCategoryClick = (category) => {
+
     setSelectedCategory(category);
   };
 
@@ -24,7 +25,7 @@ const KelasPage = () => {
 
   return (
     <div className="homepage">
-      <header className="w-100 min-vh-100 d-flex align-items-center">
+      <header className="w-100 min-vh-100 d-flex align-items-center header">
         <Container>
           <Row className="header-box d-flex align-items-center">
             <Col lg="6">
@@ -32,12 +33,10 @@ const KelasPage = () => {
                 Top Up <br /> <span>Game Murah</span> <br />Cuma disini!!!
               </h1>
               <p className=" mb-4">Selamat datang di AaStore, destinasi utama untuk top up game dengan harga terbaik! Temukan beragam game favoritmu dan nikmati kemudahan top up tanpa ribet. Dapatkan pengalaman bermain game yang lebih seru dan lancar dengan layanan top up terpercaya dari AaStore!</p>
-              <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2">Lihat List</button>
-              <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">Lihat Promo</button>
             </Col>
-            <Col lg="6" className="pt-lg-0 pt-5">
+            {/* <Col lg="6" className="pt-lg-0 pt-5">
               <img src={HeroImage} alt="hero-img" />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </header>
@@ -52,15 +51,15 @@ const KelasPage = () => {
           </Row>
 
           <div className="button-containers">
-            <button className="btn1" onClick={() => handleCategoryClick('all')}>Semua</button>
             <button className="btn1" onClick={() => handleCategoryClick('game_populer')}>Game Populer</button>
             <button className="btn1" onClick={() => handleCategoryClick('game_android')}>Game Android</button>
             <button className="btn1" onClick={() => handleCategoryClick('game_pc')}>Game PC</button>
+            <button className="btn1" onClick={() => handleCategoryClick('')}>Semua Game</button>
           </div>
 
           <Row>
             {semuaKelas
-              .filter((kelas) => selectedCategory === 'all' || kelas.category === selectedCategory)
+              .filter((kelas) => selectedCategory === 'all' || kelas.category.includes(selectedCategory))
               .map((kelas) => (
                 <Col key={kelas.id}>
                   <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>

@@ -41,10 +41,16 @@
 }
 
 /*STYLE HOMEPAGE HEADER*/
-header  { background: #c6ffdd; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.header {
+    background: #c6ffdd; /* fallback for old browsers */
+    background: -webkit-linear-gradient(30deg, #2d336e, #6b6bc2, #5b82d6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(30deg, #2d336e, #6b6bc2, #5b82d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
   }
+  
+
+  /* Animasi */
+
 
   @keyframes slideIn {
     0% {
@@ -274,8 +280,8 @@ header  { background: #c6ffdd; /* fallback for old browsers */
 }
 
 .footer {background: #c6ffdd; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #2d336e, #6b6bc2, #5b82d6);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(30deg, #2d336e, #6b6bc2, #5b82d6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(30deg, #2d336e, #6b6bc2, #5b82d6);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
 .footer .row.row:nth-child(1) .col:nth-child(2){

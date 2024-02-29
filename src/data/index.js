@@ -51,11 +51,11 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Ghensin Impact",
     price: [
-      { type: "moon x1", price: 100000 },
-      { type: "moon x2", price: 200000 },
-      { type: "moon x3", price: 300000 }
+      { type: "moon x1", price: "Rp 62.000,-" },
+      { type: "moon x2", price: "Rp 122.000,-" },
+      { type: "moon x3", price: "Rp 182.000,-" }
     ],
-    category:'game_populer',
+    category:['game_pc','game_android', 'game_populer'],
     delay: "1300",
   },
   {
@@ -78,7 +78,7 @@ export const semuaKelas = [
       { type: "500 dm", price: "Rp 72.000,-" },
       { type: "720 dm", price: "Rp 100.000,-" },
     ],
-    category:"game_populer",
+    category:["game_populer", "game_android"],
     delay: "1600",
   },
   {
@@ -90,10 +90,18 @@ export const semuaKelas = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
     title: "Mobile Legend",
-    price: [{ type: "moon x1", price: 100000 },
-    { type: "moon x2", price: 200000 },
-    { type: "moon x3", price: 300000 }],
-    category:"game_populer",
+    price: [
+    { type: "28 dm", price: "Rp 8.000,-" },
+    { type: "85 dm", price: "Rp 23.000,-" },
+    { type: "110 dm", price: "Rp 32.000,-" },
+    { type: "277 dm", price: "Rp 76.000,-" },
+    { type: "568 dm", price: "Rp 155.000,-" },
+    { type: "642 dm", price: "Rp 175.000,-" },
+    { type: "716 dm", price: "Rp 195.000,-" },
+    { type: "845 dm", price: "Rp 235.000,-" },
+    { type: "2232 dm", price: "Rp 570.000,-" },
+  ],
+    category:["game_android", 'game_populer'],
     delay: "1900",
   },
   {
@@ -105,10 +113,12 @@ export const semuaKelas = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
     title: "PUBG Mobile",
-    price: [{ type: "moon x1", price: 100000 },
-    { type: "moon x2", price: 200000 },
-    { type: "moon x3", price: 300000 }],
-    category:"game_populer",
+    price: [
+    { type: "60 uc", price: "Rp 14.000,-" },
+    { type: "325 uc", price: "Rp 66.000,-" },
+    { type: "660 uc", price: "Rp 129.000,-" },
+    { type: "1800 uc", price: "Rp 330.000,-" },],
+    category:["game_populer", 'game_android'],
     delay: "",
   },
   {
@@ -138,7 +148,7 @@ export const semuaKelas = [
     price: [{ type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
-    category:"game_populer",
+    category:"game_pc",
     delay: "600",
   },
   {

@@ -3,10 +3,19 @@ import HeroImage from '../assets/img/hero.png';
 import { kelasTerbaru } from '../data/index';
 
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import FaqComponent from "../components/FaqComponent";
+
 
 const HomePage = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    // Script untuk mengatur durasi animasi
+    const bubbles = document.querySelectorAll(".bubble");
+    bubbles.forEach((bubble, index) => {
+      bubble.style.animationDelay = `${index * 1000}ms`;
+    });
+  }, []);
 
   const handleButtonClick = (kelasId) => {
     // Redirect ke halaman baru berdasarkan ID kelas
@@ -17,7 +26,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <header className="w-100 min-vh-100 d-flex align-items-center">
+      <header className="w-100 min-vh-100 d-flex align-items-center header">
         <Container>
           <Row className="header-box d-flex align-items-center">
             <Col lg="6">
@@ -25,14 +34,16 @@ const HomePage = () => {
                 Top Up <br /> <span>Game Murah</span> <br />Cuma disini!!!
               </h1>
               <p className=" mb-4">Selamat datang di AaStore, destinasi utama untuk top up game dengan harga terbaik! Temukan beragam game favoritmu dan nikmati kemudahan top up tanpa ribet. Dapatkan pengalaman bermain game yang lebih seru dan lancar dengan layanan top up terpercaya dari AaStore!</p>
-              <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2">Lihat List</button>
+              <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2" onClick={() => navigate("kelas")}>Lihat List</button>
               <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">Lihat Promo</button>
             </Col>
+
             <Col lg="6" className="pt-lg-0 pt-5">
               <img src={HeroImage} alt="hero-img" />
             </Col>
           </Row>
         </Container>
+
       </header>
       <div className="kelas w-100 min-vh-100">
         <Container>
@@ -46,14 +57,22 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => (
               <Col key={kelas.id}>
-                <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>
-                  <img src={kelas.image} alt={kelas.title} className="w-100 mb-3 rounded-top" />
-                  <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
-                  {/* Jika Anda ingin menambahkan tombol beli, Anda dapat melakukannya di sini */}
-                  {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
+                <div className="image-button-container">
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>
+                    <img src={kelas.image} alt={kelas.title} className="w-100 mb-3 rounded-top" />
+                    <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
+                    {/* Jika Anda ingin menambahkan tombol beli, Anda dapat melakukannya di sini */}
+                    {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
                       <button className="btn btn-success rounded-3" onClick={() => navigate("kelas")}>{kelas.buy}</button>
                 </div> */}
-                </button>
+                  </button>
+                </div>
               </Col>
             ))}
           </Row>
