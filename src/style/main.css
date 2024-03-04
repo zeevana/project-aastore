@@ -180,10 +180,10 @@
 }
 
 .homepage .kelas .row.row:nth-child(2){
-    filter: drop-shadow(5px 3px 5px #2d336e);
+    filter: drop-shadow(5px 3px 5px blue);
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 25px;
+    gap: 15px;
     padding-inline: 10px;
 }
 
@@ -200,7 +200,7 @@
 }
 
 .homepage .kelas ,.row.row:nth-child(3) {
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
 
