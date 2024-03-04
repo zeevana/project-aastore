@@ -182,7 +182,7 @@
 .homepage .kelas .row.row:nth-child(2){
     filter: drop-shadow(5px 3px 5px #2d336e);
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 25px;
     padding-inline: 10px;
 }
