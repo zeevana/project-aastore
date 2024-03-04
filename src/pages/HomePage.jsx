@@ -65,7 +65,7 @@ const HomePage = () => {
                   <div className="bubble"></div>
                   <div className="bubble"></div>
                   <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>
-                    <img src={kelas.image} alt={kelas.title} className="w-100 mb-3 rounded-top" />
+                    <img src={kelas.image} alt={kelas.title} className="reksa w-100 mb-3 rounded-top" />
                     <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
                     {/* Jika Anda ingin menambahkan tombol beli, Anda dapat melakukannya di sini */}
                     {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">

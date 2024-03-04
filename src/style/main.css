@@ -180,6 +180,7 @@
 }
 
 .homepage .kelas .row.row:nth-child(2){
+    filter: drop-shadow(5px 3px 5px #2d336e);
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
@@ -235,8 +236,11 @@
 
 /* STYLE LIST HARGA */
 
+.kelas .reksa {
+}
 
 .kelas .image-button {
+    
     border: none;
     background: none;
     padding: 0;
