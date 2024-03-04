@@ -182,8 +182,8 @@
 .homepage .kelas .row.row:nth-child(2){
     filter: drop-shadow(5px 3px 5px #2d336e);
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px;
     padding-inline: 10px;
 }
 
@@ -196,11 +196,11 @@
 .homepage .kelas .row.row:nth-child(2) h5{
     color: var(--color-text);
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 0.2;
 }
 
 .homepage .kelas ,.row.row:nth-child(3) {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 
