@@ -193,6 +193,7 @@
 }
 
 .homepage .kelas .row.row:nth-child(2) .col{
+    flex-wrap: wrap;
     background-color: #ffffff;
     padding: 0;
 }
