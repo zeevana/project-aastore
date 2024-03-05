@@ -145,16 +145,9 @@
         display: none; /* Menghilangkan gambar pada layar ponsel */
     }
     .homepage .kelas .row.row:nth-child(2) {
-        display: flex; /* Mengatur layout menjadi flexbox */
         flex-wrap: wrap; /* Mengatur agar konten bisa memanfaatkan ruang sesuai kebutuhan */
         justify-content: space-between; /* Menyusun item agar rata dan berjarak */
     }
-
-    .homepage .kelas .row.row:nth-child(2) .col {
-        flex: 1; /* Mengatur agar kolom fleksibel */
-        max-width: calc(25% - 10px); /* Maksimum lebar kolom menjadi 25% minus jarak antar kolom */
-    }
-
     .homepage .kelas .row.row:nth-child(2) img {
         width: 100%; /* Lebar gambar menjadi 100% agar fleksibel */
         height: auto;
@@ -205,7 +198,6 @@
 }
 
 .homepage .kelas .row.row:nth-child(2){
-    filter: drop-shadow(5px 3px 5px #2d336e);
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
