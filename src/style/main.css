@@ -192,22 +192,22 @@
     color: var(--color-text);
 }
 
-.homepage .kelas .row.row:nth-child(2) .col {
-    max-width: 150px; /* Tetapkan lebar maksimum */
-    flex-grow: 1; /* Biarkan kolom dapat memanfaatkan ruang kosong */
+.homepage .kelas .row.row:nth-child(2) .col{
+    flex-wrap: wrap;
     background-color: #ffffff;
     padding: 0;
 }
 
-.homepage .kelas .row.row:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ubah menjadi nilai tetap */
+.homepage .kelas .row.row:nth-child(2){
+    display:grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding-inline: 10px;
 }
 
-.homepage .kelas .row.row:nth-child(2) img {
-    width: 100%; /* Lebar gambar menjadi 100% agar sesuai dengan lebar kolom */
+.homepage .kelas .row.row:nth-child(2) img{
+    width: 50vw;
     height: auto;
     object-fit: cover;
 }
