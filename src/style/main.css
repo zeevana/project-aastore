@@ -155,6 +155,16 @@
     .homepage .header-box p {
         font-size: 12px;
     }
+    .homepage .kelas .row.row:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom pada layar ponsel */
+        gap: 20px; /* Jarak antar kolom */
+    }
+
+    .homepage .kelas .row.row:nth-child(2) img {
+        width: 100%; /* Lebar gambar menjadi 100% agar fleksibel */
+        height: auto;
+        object-fit: cover;
+    }
     
 }
 
@@ -180,7 +190,7 @@
 }
 
 .homepage .kelas .row.row:nth-child(2){
-    filter: drop-shadow(5px 3px 5px blue);
+    filter: drop-shadow(5px 3px 5px #2d336e);
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
