@@ -142,7 +142,7 @@
         font-size: 10px;
     }
     .homepage .header-box  img {
-        width: 300px;
+        width: none;
     }
     .homepage .kelas .row.row:nth-child(2) {
         grid-template-columns: repeat(3, 1fr); /* Menjadi 3 kolom pada layar ponsel */
@@ -150,7 +150,7 @@
     }
 
     .homepage .kelas .row.row:nth-child(2) img {
-        width: 100%; /* Lebar gambar menjadi 100% agar fleksibel */
+        width: 100px; /* Lebar gambar menjadi 100% agar fleksibel */
         height: auto;
         object-fit: cover;
     }
