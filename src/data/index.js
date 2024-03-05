@@ -12,6 +12,8 @@ import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
 import People3 from "../assets/img/testimonial/people-3.jpg";
 
+import Diamond from "../assets/img/kelas/diamond.png";
+
 export const navLinks = [
   {
     id: 1,
@@ -51,9 +53,11 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Ghensin Impact",
     price: [
-      { type: "moon x1", price: "Rp 62.000,-" },
+      { type: "moon x1", price: "Rp 62.000,-"},
       { type: "moon x2", price: "Rp 122.000,-" },
-      { type: "moon x3", price: "Rp 182.000,-" }
+      { type: "moon x3", price: "Rp 182.000,-" },
+      { type: "moon x4", price: "Rp 240.000,-" },
+      { type: "moon x5", price: "Rp 300.000,-" },
     ],
     category:['game_pc','game_android', 'game_populer'],
     delay: "1300",
@@ -68,15 +72,15 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Free Fire",
     price: [
-      { type: "70 dm", price: "Rp 10.000,-"},
-      { type: "100 dm", price: "Rp 15.0000,-" },
-      { type: "140 dm", price: "Rp 22.000,-" },
-      { type: "210 dm", price: "Rp 32.000,-" },
-      { type: "280 dm", price: "Rp 42.000,-" },
-      { type: "355 dm", price: "Rp 52.000,-" },
-      { type: "420 dm", price: "Rp 62.000,-" },
-      { type: "500 dm", price: "Rp 72.000,-" },
-      { type: "720 dm", price: "Rp 100.000,-" },
+      { type: "70 dm", price: "Rp 10.000,-", image:Diamond },
+      { type: "100 dm", price: "Rp 15.0000,-", image:Diamond  },
+      { type: "140 dm", price: "Rp 22.000,-", image:Diamond  },
+      { type: "210 dm", price: "Rp 32.000,-", image:Diamond  },
+      { type: "280 dm", price: "Rp 42.000,-", image:Diamond  },
+      { type: "355 dm", price: "Rp 52.000,-", image:Diamond  },
+      { type: "420 dm", price: "Rp 62.000,-", image:Diamond  },
+      { type: "500 dm", price: "Rp 72.000,-", image:Diamond  },
+      { type: "720 dm", price: "Rp 100.000,-", image:Diamond  },
     ],
     category:["game_populer", "game_android"],
     delay: "1600",
@@ -130,9 +134,10 @@ export const semuaKelas = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
     title: "Roblox",
-    price: [{ type: "moon x1", price: 100000 },
-    { type: "moon x2", price: 200000 },
-    { type: "moon x3", price: 300000 }],
+    price: [
+    { type: "2000 Robux", price: "Rp 378.000,-" },
+    { type: "4500 Robux", price: "Rp 800.000,-" },
+    { type: "10.000 Robux", price: "Rp 1.550.000,-" }],
     category:"game_populer",
     delay: "300",
   },
@@ -145,7 +150,8 @@ export const semuaKelas = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
     title: "Valorant",
-    price: [{ type: "moon x1", price: 100000 },
+    price: [
+    { type: "moon x1", price: 100000 },
     { type: "moon x2", price: 200000 },
     { type: "moon x3", price: 300000 }],
     category:"game_pc",

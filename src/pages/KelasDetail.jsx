@@ -24,13 +24,20 @@ const KelasDetail = () => {
             <div className="card-container">
                 {kelas.price.map((harga, index) => (
                     <Card key={index} className="mb-3">
-                        <Card.Body>
-                            <Card.Title>{harga.type}</Card.Title>
-                            <Card.Text>{harga.price}</Card.Text>
+                        <Card.Body className="d-flex align-items-center">
+                            {/* Gambar disamping kiri */}
+                            <img src={harga.image} alt="gambar" style={{ width: '35px', marginRight: '20px' }} />
+                            <div>
+                                {/* Harga type */}
+                                <Card.Title>{harga.type}</Card.Title>
+                                {/* Harga price */}
+                                <Card.Text>{harga.price}</Card.Text>
+                            </div>
                         </Card.Body>
                     </Card>
                 ))}
             </div>
+
 
         </div>
     );
