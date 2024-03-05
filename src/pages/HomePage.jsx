@@ -44,29 +44,6 @@ const HomePage = () => {
           </Row>
         </Container>
 
-        <Row>
-          {kelasTerbaru.map((kelas) => (
-            <Col key={kelas.id}>
-              <div className="image-button-container">
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>
-                  <img src={kelas.image} alt={kelas.title} className="reksa w-100 mb-3 rounded-top" />
-                  <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
-                  {/* Jika Anda ingin menambahkan tombol beli, Anda dapat melakukannya di sini */}
-                  {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
-                      <button className="btn btn-success rounded-3" onClick={() => navigate("kelas")}>{kelas.buy}</button>
-                </div> */}
-                </button>
-              </div>
-            </Col>
-          ))}
-        </Row>
-
       </header>
       <div className="kelas w-100 min-vh-100">
         <Container>
@@ -77,7 +54,28 @@ const HomePage = () => {
             </Col>
           </Row>
 
-
+          <Row>
+            {kelasTerbaru.map((kelas) => (
+              <Col key={kelas.id}>
+                <div className="image-button-container">
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <div className="bubble"></div>
+                  <button className="image-button" onClick={() => handleButtonClick(kelas.id)}>
+                    <img src={kelas.image} alt={kelas.title} className="reksa w-100 mb-3 rounded-top" />
+                    <h5 className="mb-5 px-3" style={{ textAlign: 'left' }}>{kelas.title}</h5>
+                    {/* Jika Anda ingin menambahkan tombol beli, Anda dapat melakukannya di sini */}
+                    {/* <div className="ket d-flex justify-conten-between align-items-center px-3 pb-3">
+                      <button className="btn btn-success rounded-3" onClick={() => navigate("kelas")}>{kelas.buy}</button>
+                </div> */}
+                  </button>
+                </div>
+              </Col>
+            ))}
+          </Row>
 
           <Row>
             <Col className="text-center">
