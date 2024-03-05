@@ -131,6 +131,19 @@
     .homepage .header-box h1 {
         font-size: 3rem;
     }
+    
+}
+
+@media screen and (max-width: 475px) {
+    .homepage .header-box h1 {
+        font-size: 2.4rem;
+    }
+    .homepage .header-box p {
+        font-size: 10px;
+    }
+    .homepage .header-box  img {
+        width: 100px;
+    }
     .homepage .kelas .row.row:nth-child(2) {
         grid-template-columns: repeat(3, 1fr); /* Menjadi 3 kolom pada layar ponsel */
         gap: 20px; /* Jarak antar kolom */
@@ -142,28 +155,6 @@
         object-fit: cover;
     }
     
-}
-
-@media screen and (max-width: 475px) {
-    .homepage .header-box h1 {
-        font-size: 2.4rem;
-    }
-    .homepage .header-box p {
-        font-size: 14px;
-    }
-    .homepage .header-box  img {
-        width: 300px;
-    }
-    .homepage .kelas .row.row:nth-child(2) {
-        grid-template-columns: repeat(3, 1fr); /* Menjadi 3 kolom pada layar ponsel */
-        gap: 20px; /* Jarak antar kolom */
-    }
-
-    .homepage .kelas .row.row:nth-child(2) img {
-        width: 100%; /* Lebar gambar menjadi 100% agar fleksibel */
-        height: auto;
-        object-fit: cover;
-    }
     
 }
 
