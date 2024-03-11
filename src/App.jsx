@@ -6,6 +6,7 @@ import NavbarComponent from './components/NavbarComponent';
 import KelasPage from './pages/KelasPage';
 import FooterComponent from './components/FooterComponent';
 import KelasDetail from './pages/KelasDetail';
+import ProfilPage from './pages/ProfilPage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" Component={HomePage} />
         <Route path="/kelas" Component={KelasPage} />
+        <Route path="/testimonial" Component={ProfilPage} />
         <Route path="/faq" Component={FaqPage} />
         <Route path="/kelas/:kelasId" Component={KelasDetail} /> {/* Rute untuk halaman detail kelas */}
       </Routes>

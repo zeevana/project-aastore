@@ -182,43 +182,43 @@
     padding-bottom: 100px;
 }
 
-.homepage .kelas .row:nth-child(1){
+.homepage .kelas .row:nth-child(1) {
     padding-top: 150px;
     padding-bottom: 100px;
 }
 
-.homepage .kelas .row:nth-child(1) h1 ,
+.homepage .kelas .row:nth-child(1) h1,
 .homepage .kelas .row:nth-child(1) p {
     color: var(--color-text);
 }
 
-.homepage .kelas .row.row:nth-child(2) .col{
+.homepage .kelas .row.row:nth-child(2) .col {
     flex-wrap: wrap;
     background-color: #ffffff;
     padding: 0;
 }
 
-.homepage .kelas .row.row:nth-child(2){
-    display:grid;
+.homepage .kelas .row.row:nth-child(2) {
+    display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding-inline: 10px;
 }
 
-.homepage .kelas .row.row:nth-child(2) img{
-    width: 50vw;
-    height: auto;
+.homepage .kelas .row.row:nth-child(2) img {
+    width: 200px; /* Ubah ukuran gambar menjadi tetap */
+    height: 200px; /* Ubah ukuran gambar menjadi tetap */
     object-fit: cover;
 }
 
-.homepage .kelas .row.row:nth-child(2) h5{
+.homepage .kelas .row.row:nth-child(2) h5 {
     color: var(--color-text);
     font-weight: bold;
     line-height: 1.5;
 }
 
-.homepage .kelas ,.row.row:nth-child(3) {
+.homepage .kelas .row.row:nth-child(3) {
     padding-top: 100px;
 }
 

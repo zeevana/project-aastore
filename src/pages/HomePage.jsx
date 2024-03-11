@@ -33,7 +33,7 @@ const HomePage = () => {
               <h1 className="mb-4">
                 Top Up <br /> <span>Game Murah</span> <br />Cuma disini!!!
               </h1>
-              <p className=" mb-4">Selamat datang di AaStore, destinasi utama untuk top up game dengan harga terbaik! Temukan beragam game favoritmu dan nikmati kemudahan top up tanpa ribet. Dapatkan pengalaman bermain game yang lebih seru dan lancar dengan layanan top up terpercaya dari AaStore!</p>
+              <p className="mb-4">Selamat datang di AaStore, destinasi utama untuk top up game dengan harga terbaik! Temukan beragam game favoritmu dan nikmati kemudahan top up tanpa ribet. Dapatkan pengalaman bermain game yang lebih seru dan lancar dengan layanan top up terpercaya dari AaStore!</p>
               <button className="btn btn-danger btn-lg rounded-1 me-2 mb-xs-0 mb-2" onClick={() => navigate("kelas")}>Lihat List</button>
               <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">Lihat Promo</button>
             </Col>
