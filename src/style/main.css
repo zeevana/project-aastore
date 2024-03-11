@@ -156,17 +156,6 @@
     .footer .payment-methods img {
         width: 15px; /* Ukuran gambar lebih kecil untuk perangkat seluler */
       }
-      .footer .row:nth-child(1) .col {
-        text-align: center; /* Pusatkan teks untuk ukuran layar kecil */
-      }
-    
-      .footer .row:nth-child(2) {
-        margin-top: 20px; /* Mengurangi margin atas untuk ukuran layar kecil */
-      }
-    
-      .footer .payment-methods {
-        grid-template-columns: repeat(2, 1fr); /* Mengatur dua kolom untuk pembayaran pada ukuran layar kecil */
-      }
 }
 
 @media screen and (max-width: 375px) {
