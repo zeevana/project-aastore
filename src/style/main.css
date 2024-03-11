@@ -153,6 +153,9 @@
         height: auto;
         object-fit: cover;
     }
+    .footer .payment-methods img {
+        width: 50px; /* Ukuran gambar lebih kecil untuk perangkat seluler */
+      }
 }
 
 @media screen and (max-width: 375px) {
@@ -326,7 +329,7 @@
 }
 .footer .payment-methods {
     display: grid; /* Menggunakan grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Membagi ruang menjadi lima kolom dengan lebar yang sama */
+    grid-template-columns: repeat(4, 1fr); /* Membagi ruang menjadi lima kolom dengan lebar yang sama */
     justify-items: center; /* Pusatkan item di setiap kolom */
     gap: 20px; /* Jarak antara setiap item */
   }
