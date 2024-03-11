@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { paymentMethods } from "../data/index";
 
 const FooterComponent = () => {
   return (
@@ -10,17 +11,16 @@ const FooterComponent = () => {
             <h3 className="fw-bold">AaStore</h3>
             <p className="desc">Jl. Drs Esau Sesa Makobrimob, Sowi, Distrik Manokwari, Kabupaten Manokwari, Papua Barat, 98315</p>
             <div className="no mb-1 mt-4">
-              <Link className="text-decoration-none">
-                <i className="fa-brands fa-whatsapp"></i>
+              <Link to="https://wa.me/6285269512024" className="text-decoration-none">
+                <i className="fab fa-whatsapp"></i>
                 <p className="m-0">0852-6951-2024</p>
               </Link>
             </div>
             <div className="mail">
-              <Link className="text-decoration-none">
+              <Link to="mailto:airdp1112@gmail.com" className="text-decoration-none">
                 <i className="fa-regular fa-envelope"></i>
-                <p className="m-0">person-email@gmail.com</p>
+                <p className="m-0">airdp1112@gmail.com</p>
               </Link>
-
             </div>
           </Col>
           <Col className="d-flex flex-column col-lg-2 col">
@@ -31,7 +31,14 @@ const FooterComponent = () => {
             <Link to="">FAQ</Link>
             <Link to="">Syarat & Ketentuan</Link>
           </Col>
-          <Col></Col>
+          <Col className="d-flex flex-column col-lg-2 col">
+            <h5 className="fw-bold">Payments</h5>
+            <div className="payment-methods">
+              {paymentMethods.map((method, index) => (
+                <img key={index} src={method.imgSrc} alt={method.altText} />
+              ))}
+            </div>
+          </Col>
         </Row>
 
         <Row>
@@ -44,4 +51,4 @@ const FooterComponent = () => {
   )
 }
 
-export default FooterComponent
+export default FooterComponent;

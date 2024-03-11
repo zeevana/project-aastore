@@ -182,43 +182,43 @@
     padding-bottom: 100px;
 }
 
-.homepage .kelas .row:nth-child(1) {
+.homepage .kelas .row:nth-child(1){
     padding-top: 150px;
     padding-bottom: 100px;
 }
 
-.homepage .kelas .row:nth-child(1) h1,
+.homepage .kelas .row:nth-child(1) h1 ,
 .homepage .kelas .row:nth-child(1) p {
     color: var(--color-text);
 }
 
-.homepage .kelas .row.row:nth-child(2) .col {
+.homepage .kelas .row.row:nth-child(2) .col{
     flex-wrap: wrap;
     background-color: #ffffff;
     padding: 0;
 }
 
-.homepage .kelas .row.row:nth-child(2) {
-    display: grid;
+.homepage .kelas .row.row:nth-child(2){
+    display:grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding-inline: 10px;
 }
 
-.homepage .kelas .row.row:nth-child(2) img {
-    width: 200px; /* Ubah ukuran gambar menjadi tetap */
-    height: 200px; /* Ubah ukuran gambar menjadi tetap */
+.homepage .kelas .row.row:nth-child(2) img{
+    width: 50vw;
+    height: auto;
     object-fit: cover;
 }
 
-.homepage .kelas .row.row:nth-child(2) h5 {
+.homepage .kelas .row.row:nth-child(2) h5{
     color: var(--color-text);
     font-weight: bold;
     line-height: 1.5;
 }
 
-.homepage .kelas .row.row:nth-child(3) {
+.homepage .kelas ,.row.row:nth-child(3) {
     padding-top: 100px;
 }
 
@@ -299,7 +299,7 @@
 
 .footer .no a :hover,
 .footer .mail a :hover {
-   color: #5b82d6;
+   color: #ffffff;
 }
 
 .footer {background: #c6ffdd; /* fallback for old browsers */
@@ -324,9 +324,22 @@
 .footer .row.row:nth-child(2) {
     margin-top: 100px;
 }
-
-
-
+.footer .payment-methods {
+    display: grid; /* Menggunakan grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Membagi ruang menjadi lima kolom dengan lebar yang sama */
+    justify-items: center; /* Pusatkan item di setiap kolom */
+    gap: 20px; /* Jarak antara setiap item */
+  }
+  
+  .footer .payment-methods img {
+    width: 100%; /* Gambar mengisi lebar kolom */
+    height: auto; /* Biarkan tinggi otomatis agar proporsi gambar tetap terjaga */
+    transition: transform 0.3s ease; /* Animasi transisi */
+  }
+  
+  .footer .payment-methods img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+  }
 
 
 /* KelasDetail.css */
