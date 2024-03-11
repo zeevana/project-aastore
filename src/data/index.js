@@ -20,7 +20,6 @@ import DanaLogo from "../assets/img/payment/dana.png";
 import GopayLogo from "../assets/img/payment/gopay.png";
 import BriLogo from "../assets/img/payment/bri.png";
 import MandiriLogo from "../assets/img/payment/mandiri.png";
-import BcaLogo from "../assets/img/payment/bca.png";
 import UsdtLogo from "../assets/img/payment/usdt.png";
 import TrxLogo from "../assets/img/payment/trx.png";
 import PolygonLogo from "../assets/img/payment/polygon.png";
@@ -31,7 +30,6 @@ export const paymentMethods = [
   { imgSrc: GopayLogo, altText: "GoPay" },
   { imgSrc: BriLogo, altText: "BRI" },
   { imgSrc: MandiriLogo, altText: "Mandiri" },
-  { imgSrc: BcaLogo, altText: "BCA" },
   { imgSrc: UsdtLogo, altText: "USDT" },
   { imgSrc: TrxLogo, altText: "TRX" },
   { imgSrc: PolygonLogo, altText: "Polygon" },
