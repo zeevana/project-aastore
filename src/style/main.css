@@ -154,6 +154,7 @@
         object-fit: cover;
     }
     .footer .payment-methods img {
+        margin-top: 20px;
         width: 15px; /* Ukuran gambar lebih kecil untuk perangkat seluler */
       }
 }
