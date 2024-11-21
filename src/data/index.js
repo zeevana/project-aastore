@@ -141,8 +141,8 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "PUBG Mobile",
     price: [
-    { type: "60 uc", price: "Rp 14.000,-", image:Uc },
-    { type: "325 uc", price: "Rp 66.000,-", image:Uc },
+    { type: "60", price: "14000", image:Uc },
+    { type: "325", price: "66000", image:Uc },
     { type: "660 uc", price: "Rp 129.000,-", image:Uc },
     { type: "1800 uc", price: "Rp 330.000,-", image:Uc },],
     category:["game_populer", 'game_android'],
